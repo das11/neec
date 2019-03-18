@@ -119,5 +119,12 @@
     items: 1
   });
 
+  $(".college-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
 })(jQuery);
 
