@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+.body,.html{
+    height: 100%;
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+.banner-btn a{
+    color: white;
+}
+.main-carousel{
+    position: relative;
+    /* padding: 0; */
+}
+.banner-caption{
+    position: absolute;
+    background-color: #00000061;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.banner-caption h3{
+    color: white;
+}
+
+.banner-caption h2{
+    color: #e1b333;
+
+}
+
+
+h3{
+    font-size: 20px;
+}
+
+.campus-section .row .col-md-6{
+    padding-top: 40px;
+}
+
+.hidden-enroll{
+    display: none;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.hidden-enroll h2{
+    color: black;
+}
+
+.hidden-enroll{
+    color: #e1b333;
+}
+
+.programmes-offers{
+    margin: 25px 0px;
+}
+.programmes-offers h2{
+    color: #024ca1;
+}
+
+.enclose{
+    margin: 2px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.course-title{
+    text-align: center;
+}
+
+.engineering .course-title,
+.science .course-title,
+.medicine .course-title,
+.management .course-title,
+.law .course-title,
+.others .course-title,
+.agriculture .course-title{
+    margin: 0 auto;
+}
+.engineering-course .list-group-item,
+.science-course .list-group-item,
+.medicine-course .list-group-item,
+.law .list-group-item,
+.agriculture .list-group-item,
+.others .list-group-item,
+.management-course .list-group-item{
+    position: relative;
+    display: block;
+    padding: .5rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #f2f2f2 !important;
+    border: none !important;
+    border-bottom: 2px solid white !important;
+}
+
+.management-course .list-group-item,
+.law .list-group-item,
+.agriculture .list-group-item{
+    height: 170px;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px){
+    .hidden-enroll {
+      display: block;
+    }
+
+    .banner-caption{
+        display: none;
+    }
+
+    .management-course .list-group-item,
+    .law .list-group-item,
+    .agriculture .list-group-item{
+        height: auto;
+    }
+  }
