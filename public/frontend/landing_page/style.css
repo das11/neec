@@ -124,4 +124,8 @@ h3{
     .agriculture .list-group-item{
         height: auto;
     }
+
+    .card-footer img{
+        height: 60px;
+    }
   }
