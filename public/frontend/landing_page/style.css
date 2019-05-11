@@ -110,6 +110,35 @@ h3{
     height: 170px;
 }
 
+.main-carousel .ad-form{
+    display: block;
+    width: 400px;
+    position: absolute;
+    padding: 10px;
+    top: 50px;
+    right: 20px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.main-carousel .ad-form h3{
+    color: #024ca1;
+    text-align: center;
+}
+
+.hidden-form{
+    padding: 30px;
+}
+
+.hidden-form h2 {
+    text-align: center;
+}
+
+.hidden-form{
+    display: none;
+}
+
 @media only screen and (max-width: 600px) and (min-width: 320px){
     .hidden-enroll {
       display: block;
@@ -117,6 +146,15 @@ h3{
 
     .banner-caption{
         display: none;
+    }
+
+    .main-carousel .ad-form{
+        display: none;
+    }
+
+    .hidden-form{
+        display: block;
+        background-color: rgb(245, 239, 239);
     }
 
     .management-course .list-group-item,
@@ -128,4 +166,6 @@ h3{
     .card-footer img{
         height: 60px;
     }
-  }
+
+
+}
