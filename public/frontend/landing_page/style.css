@@ -1,7 +1,11 @@
 *{
     box-sizing: border-box;
 }
-.body,.html{
+html{
+    scroll-behavior: smooth;
+}
+
+body,html{
     height: 100%;
     width:100%;
     padding: 0;
@@ -127,35 +131,14 @@ h3{
     text-align: center;
 }
 
-.hidden-form{
-    padding: 30px;
-}
 
-.hidden-form h2 {
-    text-align: center;
-}
 
-.hidden-form{
-    display: none;
-}
 
+
+
+/* MOBILE VIEW */
 @media only screen and (max-width: 600px) and (min-width: 320px){
-    .hidden-enroll {
-      display: block;
-    }
-
-    .banner-caption{
-        display: none;
-    }
-
-    .main-carousel .ad-form{
-        display: none;
-    }
-
-    .hidden-form{
-        display: block;
-        background-color: rgb(245, 239, 239);
-    }
+    
 
     .management-course .list-group-item,
     .law .list-group-item,
@@ -165,6 +148,31 @@ h3{
 
     .card-footer img{
         height: 60px;
+    }
+
+    .banner-caption{
+        position: relative;
+        background-color: #ffffff;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translate(0%,0%);
+        padding: 20px 20px;
+        text-align: center;
+        border-radius: none;
+    }
+
+    .main-carousel .ad-form{
+        display: block;
+        position: relative;
+        padding: 30px;
+        background: rgb(245, 239, 239);
+        border: none;
+        width: auto;
+        top: 0;
+        right: 0;
+        border-radius: 0;
     }
 
 
