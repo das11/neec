@@ -1,7 +1,11 @@
 *{
     box-sizing: border-box;
 }
-.body,.html{
+html{
+    scroll-behavior: smooth;
+}
+
+body,html{
     height: 100%;
     width:100%;
     padding: 0;
@@ -110,18 +114,66 @@ h3{
     height: 170px;
 }
 
-@media only screen and (max-width: 600px) and (min-width: 320px){
-    .hidden-enroll {
-      display: block;
-    }
+.main-carousel .ad-form{
+    display: block;
+    width: 400px;
+    position: absolute;
+    padding: 10px;
+    top: 50px;
+    right: 20px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 
-    .banner-caption{
-        display: none;
-    }
+.main-carousel .ad-form h3{
+    color: #024ca1;
+    text-align: center;
+}
+
+
+
+
+
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px) and (min-width: 320px){
+    
 
     .management-course .list-group-item,
     .law .list-group-item,
     .agriculture .list-group-item{
         height: auto;
     }
-  }
+
+    .card-footer img{
+        height: 60px;
+    }
+
+    .banner-caption{
+        position: relative;
+        background-color: #ffffff;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translate(0%,0%);
+        padding: 20px 20px;
+        text-align: center;
+        border-radius: none;
+    }
+
+    .main-carousel .ad-form{
+        display: block;
+        position: relative;
+        padding: 30px;
+        background: rgb(245, 239, 239);
+        border: none;
+        width: auto;
+        top: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+
+}
