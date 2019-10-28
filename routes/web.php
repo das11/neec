@@ -5,7 +5,7 @@
  */
 Route::group(['namespace' => 'Auth', 'middleware' => 'web'], function () {
 
-    Route::get('/', ['as' => 'user.login', 'uses' => 'LoginController@index']);
+    Route::get('test', ['as' => 'user.login', 'uses' => 'LoginController@index']);
     Route::get('/login', ['as' => 'user.login', 'uses' => 'LoginController@index']);
     Route::post('/login', ['as' => 'user.login_check', 'uses' => 'LoginController@ajaxLogin']);
     Route::get('register', ['as' => 'get-register', 'uses' => 'LoginController@getRegister']);
@@ -93,4 +93,14 @@ Route::group(['middleware' => ['auth.user', 'web'], 'prefix' => ''], function ()
 // This is added for the purpose of translation
 Route::group(['middleware' => ['auth.user', 'web'], 'prefix' => 'translations'], function () {
 
+
+    
 });
+
+
+// Route::get('test', function(){
+//     $spr = "Hello";
+//     return $spr;
+// });
+
+
