@@ -98,9 +98,8 @@ Route::group(['middleware' => ['auth.user', 'web'], 'prefix' => 'translations'],
 });
 
 
-// Route::get('test', function(){
-//     $spr = "Hello";
-//     return $spr;
-// });
+Route::get('/', function(){
+    return \File::get(public_path() . "/frontend/index.html");
+});
 
 

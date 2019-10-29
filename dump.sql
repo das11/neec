@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jul 11, 2019 at 03:07 PM
+-- Generation Time: Oct 22, 2019 at 08:55 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.1
 
@@ -47,7 +47,8 @@ INSERT INTO `activity_log` (`id`, `user_id`, `text`, `ip_address`, `created_at`,
 (11, 4, 'John updated user <strong>John</strong> successfully', '::1', '2019-02-13 02:44:45', '2019-02-13 02:44:45'),
 (12, 1, 'Admin updated user <strong>Admin</strong> successfully', '::1', '2019-04-04 03:04:01', '2019-04-04 03:04:01'),
 (13, 1, 'Admin updated user <strong>Admin</strong> successfully', '::1', '2019-04-04 03:19:17', '2019-04-04 03:19:17'),
-(14, 1, 'Admin updated user <strong>Admin</strong> successfully', '::1', '2019-04-04 03:20:20', '2019-04-04 03:20:20');
+(14, 1, 'Admin updated user <strong>Admin</strong> successfully', '::1', '2019-04-04 03:20:20', '2019-04-04 03:20:20'),
+(15, NULL, 'Seeder created user <strong>Chinmoy Hazarika</strong> successfully', '::1', '2019-07-11 07:43:00', '2019-07-11 07:43:00');
 
 -- --------------------------------------------------------
 
@@ -457,7 +458,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `avatar`, `status`, `dob
 (1, 'Admin', 'admin@example.com', '$2y$10$gC3vaRjDmU53Ohdu1G15YeCbQHEl5CqDivLgent9aWYUJM9X.Bx4.', 'default.png', 'active', NULL, 'male', 'admin', 'WyWHsRL4aTlECK9t9zkAivhZEONE2eBYqKUudM4ucn8X7fpJV1PBtSWRqUm6', '2019-02-04 02:56:08', '2019-02-04 02:56:08', NULL),
 (2, 'Kabir Das', 'kabird1196@gmail.com', '$2y$10$PlgSobiMEyCX1Urb7uIYB.nPFHtfoOJs1BfiMrxTtYcDR3fpcTfGS', 'default.png', 'active', '2019-02-05', 'male', 'admin', 'Hv4xBY9tcPWj3wcUb6fZaqbzMnDg1bj8BmHarom7uFwL6fRh9RJGFHDCa3il', '2019-02-04 02:56:49', '2019-02-04 02:56:49', NULL),
 (3, 'Amit', 'amit@amit.com', '$2y$10$PWaoYAEtB5MrE1wHJM5bCuvEaunGrEDMOK9fO00GZqvr4DWkoO00W', 'default.png', 'active', '2019-02-06', 'male', 'user', '1pnRjEtzQDiBvc0svTzzD5pHO7bfYfwf65GmiGhqm5pKxBAm1VAXxRtLju5E', '2019-02-13 02:34:07', '2019-02-13 02:34:07', NULL),
-(4, 'John', 'john@mil.com', '$2y$10$VLcFeyV7jEv/jGOl/6NT8eHj5/OVLGzzGK6jFlukZOgIP7gepxOnu', 'default.png', 'active', '2019-02-13', 'male', 'user', 'JkIRnTfDC41fcSl1nhpI4crWsab7Zoyq3OVeSCmcNHzDzMhF6SRq6xZxHeka', '2019-02-13 02:44:06', '2019-02-13 02:44:06', NULL);
+(4, 'John', 'john@mil.com', '$2y$10$VLcFeyV7jEv/jGOl/6NT8eHj5/OVLGzzGK6jFlukZOgIP7gepxOnu', 'default.png', 'active', '2019-02-13', 'male', 'user', 'JkIRnTfDC41fcSl1nhpI4crWsab7Zoyq3OVeSCmcNHzDzMhF6SRq6xZxHeka', '2019-02-13 02:44:06', '2019-02-13 02:44:06', NULL),
+(5, 'Chinmoy Hazarika', 'kabird11961@gmail.com', '$2y$10$tcHROIJQ.cXFZVfn92I7lOrZQdYTjvH8AHkdLfmOB5Qi0QI8KPNz.', 'default.png', 'active', '1990-02-07', 'male', 'user', NULL, '2019-07-11 07:43:00', '2019-07-11 07:43:00', NULL);
 
 -- --------------------------------------------------------
 
@@ -612,7 +614,7 @@ ALTER TABLE `users_chat`
 -- AUTO_INCREMENT for table `activity_log`
 --
 ALTER TABLE `activity_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `custom_fields`
 --
@@ -667,7 +669,7 @@ ALTER TABLE `socials`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `users_chat`
 --
